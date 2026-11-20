@@ -218,3 +218,15 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
 .stop .pts{margin:6px 0 0;padding-left:18px;color:var(--muted);font-size:.92rem}
 .stop .pts li{margin-bottom:3px}
 .stop .pts strong{color:var(--text)}
+
+/* mobile overflow fixes */
+html,body{overflow-x:hidden}
+.hero-in>*{min-width:0}
+@media (max-width:860px){
+  .hero-in{grid-template-columns:minmax(0,1fr)}
+  .hero-projects .projects{grid-template-columns:1fr 1fr}
+  .hero-projects .proj p{font-size:.8rem}
+}
+@media (max-width:520px){
+  .hero-projects .projects{grid-template-columns:1fr}
+}
