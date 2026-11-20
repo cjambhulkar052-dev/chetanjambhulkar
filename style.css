@@ -6,7 +6,8 @@
   --bg:#16120a;--bg2:#1d1810;--text:#f8efd2;--muted:#c2b283;--line:#33291a;
   --accent:#f7c948;--accent2:#fb923c;--card:#211b10;
 }
-:root[data-theme="dark"] .btn,:root[data-theme="dark"] nav a.btn{color:#1a1405!important}
+:root[data-theme="dark"] .btn:not(.ghost),:root[data-theme="dark"] nav a.btn{color:#1a1405!important}
+:root[data-theme="dark"] .btn.ghost{color:var(--text)!important}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
